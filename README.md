@@ -23,6 +23,7 @@ The goal was to analyze and organize LinkedIn course data to reveal distribution
 - Subqueries and CTEs: Used subqueries and common table expressions (CTEs) to structure and simplify complex transformations and calculations.
 
 ## Data Sourcing
+
 The dataset, containing fields such as course titles, release dates, categories, durations, and descriptions, was sourced from Kaggle. 
 
 ## Data Transformation
@@ -30,20 +31,28 @@ The dataset, containing fields such as course titles, release dates, categories,
 Some of the important transformation steps are highlighted here
 
 Here is an image of the table before transformation
-(Image all1)
-(Image all2)
+![](Capture_all1.PNG)
+![](Capture_all2.PNG)
 
 ### Steps followed 
 
 1)Data Cleaning: Removed courses with missing duration values using the SQL DELETE statement to ensure data consistency and reliability.
-(image)
+
+![](Capture_step1_delete.PNG)
 
 2)Course Distribution by Category: Aggregated the data to find the number of courses offered in each category. The results highlighted the most popular course categories and enabled comparisons across different areas of expertise.
-(image)
+
+![](Capture_step_2i.PNG) | ![](Capture_step_2ii.PNG)
+
 3)Release Trends: Analyzed courses by release year and month to observe any release trends or patterns over time. Subqueries were used to extract year and year-month formats from release dates, and aggregation provided an overview of course offerings by year.
-(image)
+
+![](Capture_course_release_by_year_and_month.PNG) | ![](Capture_course_release_by_year_result.PNG)
+----------------------
+![](Capture_course_release_by_year_and_month_emphasis_on_month.PNG) | ![](Capture_course_release_by_month_result.PNG)
+
 4)Course Duration Transformation: Converted complex duration formats hh:mm:ss into minutes. This transformation allowed for standardized duration analysis across all courses.
-(image)
+
+![](Capture_step1_delete.PNG)
 
 5)Average Duration by Category: Calculated the average duration per category by dividing the total duration by the count of courses in each category, identifying categories with longer or more detailed course offerings.
 (image)
