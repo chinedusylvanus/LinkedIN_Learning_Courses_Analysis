@@ -1,4 +1,4 @@
-# LinkedIn Courses Data Analysis Project (Using SQL)
+# LinkedIn Courses Data Analysis Project (Using SQL) | ![](LinkedIn_logo_initials.png)
 
 ## Introduction
 
@@ -32,6 +32,7 @@ Some of the important transformation steps are highlighted here
 
 Here is an image of the table before transformation
 ![](Capture_all1.PNG)
+
 ![](Capture_all2.PNG)
 
 ### Steps followed 
