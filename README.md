@@ -52,19 +52,27 @@ Here is an image of the table before transformation
 
 4)Course Duration Transformation: Converted complex duration formats hh:mm:ss into minutes. This transformation allowed for standardized duration analysis across all courses.
 
-![](Capture_step1_delete.PNG)
+![](Capture_hhmmss_transformation.PNG)
 
 5)Average Duration by Category: Calculated the average duration per category by dividing the total duration by the count of courses in each category, identifying categories with longer or more detailed course offerings.
-(image)
+
+![](Capture_average_duration_calc.PNG) | ![](Capture_average_duration_result.PNG)
 
 6)Top 10 Longest Courses: Used ROW_NUMBER to rank courses by duration within each locale, identifying the ten longest courses for deeper insights into extended content.
-(image)
+
+![](Capture_top_ten_courses_sql.PNG) | ![](Capture_top_ten_courses_result.PNG)
+
 7)Gap Analysis Using LAG: Calculated the gap between consecutive course releases within each category, providing insights into the content cadence and frequency of course updates.
-(image 7)
+
+![](Capture7sql.PNG) | ![](Capture7result.PNG)
+
 8)Quartile Segmentation: Segmented courses into quartiles based on duration, categorizing them as ‘Top 25%’, ‘Top 26%-50%’, etc., to classify courses by length and potentially by content depth.
-(image 8)
+
+![](Capture_8_sql.PNG) | ![](Capture8result.PNG)
+
 9)Running Total of Duration: Used a cumulative sum function within a CTE to calculate the running total of course duration, which helped visualize how total available content has grown over time.
-(image)
+
+![](Capture_9_sql.PNG) | ![](Capture_9_result.PNG)
 
 ## Recommendations and Conclusion
 This analysis provided a comprehensive view of LinkedIn course offerings, identifying key categories and durations that may appeal to different user segments. Regular updates and longer-duration courses are evident in popular categories, indicating robust content production in high-demand skills. 
