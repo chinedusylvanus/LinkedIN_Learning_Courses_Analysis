@@ -1,6 +1,6 @@
 # LinkedIn Courses Data Analysis Project (Using SQL) 
 ----
-| ![](LinkedIn_logo_initials.png)
+### | ![](LinkedIn_logo_initials.png)
 
 ## Introduction
 
